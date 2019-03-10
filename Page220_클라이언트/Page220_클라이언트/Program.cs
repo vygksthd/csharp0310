@@ -18,6 +18,9 @@ namespace Page220_클라이언트
                 client = new TcpClient();
                 client.Connect("localhost", 5001);
                 NetworkStream stream = client.GetStream();
+
+                Encoding encode = Encoding.GetEncoding("utf-8");
+                StreamReader reader = new StreamReader(stream, encode);
                 StreamWriter writer = new StreamWriter(stream) { AutoFlush = true };
 
                 string dataToSend = Console.ReadLine();
@@ -25,9 +28,8 @@ namespace Page220_클라이언트
                 while(true)
                 {
                     writer.WriteLine(dataToSend);
-
-                    if (dataToSend.IndexOf("<EOF>") > -1) break;
-                    dataToSend = Console.ReadLine();
+                    String str = reader.ReadLine();
+                    Console.WriteLine(str);
                 }
             }
             catch (Exception ex)
