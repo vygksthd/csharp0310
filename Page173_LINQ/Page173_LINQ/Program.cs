@@ -8,11 +8,15 @@ namespace Page173_LINQ
 {
     class Program
     {
+        static bool isEven(int num)
+        {
+            return num % 2 == 0;
+        }
         static void Main(string[] args)
         {
             int[] numbers = { 1, 2, 3, 4, 5, 6, };
 
-            IEnumerable<int> q1 = numbers.Where(num => num % 2 == 0).OrderByDescending(n => n);
+            IEnumerable<int> q1 = numbers.Where(isEven).OrderByDescending(n => n);
             foreach (int i in q1) Console.WriteLine(i + " ");
 
             Console.WriteLine();
