@@ -9,12 +9,13 @@ namespace Page215_동기화
     public class ThreadTest
     {
         public string lockString = "Hello";
-        private object obj = new object();
+        private static Mutex mutex = new Mutex();
+
         public void Print(string rank)
         {
-            Monitor.Enter(obj);
+            mutex.WaitOne();
             {
-                for(int i = 0; i < 5; i++)
+                for (int i = 0; i < 5; i++)
                 {
                     for(int j = 0; j < 5; j++)
                     {
@@ -24,7 +25,7 @@ namespace Page215_동기화
                     Console.WriteLine("{0}{1}", rank, lockString);
                 }
             }
-            Monitor.Exit(obj);
+            mutex.ReleaseMutex();
         }
         public void FirstWork() { Print("F"); }
         public void SecondWork() { Print("S"); }
