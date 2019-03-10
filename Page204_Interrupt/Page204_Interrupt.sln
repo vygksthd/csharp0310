@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Page204_Interrupt", "Page204_Interrupt\Page204_Interrupt.csproj", "{A7DD8C8F-A5FB-4C56-A560-322A5F9A88BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7DD8C8F-A5FB-4C56-A560-322A5F9A88BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DD8C8F-A5FB-4C56-A560-322A5F9A88BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DD8C8F-A5FB-4C56-A560-322A5F9A88BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DD8C8F-A5FB-4C56-A560-322A5F9A88BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {806052F2-13C3-4CA9-BA00-2A2225265A19}
+	EndGlobalSection
+EndGlobal
