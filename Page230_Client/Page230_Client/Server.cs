@@ -6,7 +6,7 @@ using System.Net.Sockets;using System.Threading;
 class ServerHandler
 {
     StreamReader reader = null;
-    public ServerHandler(StreamReader reader)
+    public ServerHandler(StreamReader reader) 
     {
         this.reader = reader;
     }
