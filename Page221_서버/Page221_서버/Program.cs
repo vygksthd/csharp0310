@@ -6,7 +6,7 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 
-namespace Page221_서버
+namespace Page221_서버 
 {
     class Program
     {
